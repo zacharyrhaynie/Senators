@@ -1,0 +1,38 @@
+{
+  "name": "exercise-boilerplate-node",
+  "version": "1.0.0",
+  "description": "Boilerplate Exercise for NodeJS",
+  "main": "src/index.js",
+  "repository": "https://TylerGarlick@gitlab.com/helio-training/exercises/exercise-boilerplate-node.git",
+  "authors": [
+    "Tyler Garlick <tgarlick@heliotraining.com>",
+    "Aric Beagley <abeagley@heliotraining.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ava": {
+    "failFast": true,
+    "tap": true,
+    "powerAssert": true,
+    "require": [
+      "babel-polyfill",
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.8.0",
+    "nodemon": "^1.12.1",
+    "tap-json": "^1.0.0"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist",
+    "serve": "node ./dist",
+    "test": "ava test --tap | tap-json"
+  }
+}
