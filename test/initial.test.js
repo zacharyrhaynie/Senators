@@ -1,5 +1,5 @@
-import Test from 'ava'
+describe('Dummy Test', () => {
 
-Test(`example...`, async t => {
-  t.pass()
+  it(`works`, () => expect(true).to.be.true())
+
 })
