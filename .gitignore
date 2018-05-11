@@ -56,6 +56,8 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+.idea
+.DS_store
 
 # Visual Studio 2015 cache/options directory
 .vs/
